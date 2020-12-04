@@ -37,17 +37,45 @@ Wer dies zu erst schafft Gewinnt das Spiel.
 
 ### <a name="2.2"></a>Wie Funktionieren die Einzelteile?:
 [Startscreen](#2.2.1), 
-[Bewegung](#2.2.2) ,
-[Kampfsystem](#2.2.3) 
+[Bewegung und die Stage](#2.2.2) ,
+[Kampfsystem](#2.2.3),
 
-## <a name="2.2.1"></a>Startscreen:
+#### <a name="2.2.1"></a>Startscreen:
+
+Als erstes werden beim Startscreen alle Variablen, die eine Rolle spielen definiert und das Cover wird sichtbar. 
+
+![Fertiges Projekt Yannick Malte script pic](https://user-images.githubusercontent.com/69623479/101168960-8c04e200-363c-11eb-81e3-2ff5d6ecb15d.png)
+
+![Unbenannt7](https://user-images.githubusercontent.com/69623479/101169530-5f9d9580-363d-11eb-9ffd-a2a3e99beefd.PNG)
+
+Der nächste Schritt ist in die Characterauswahl zu wechseln
+
+![Unbenannt](https://user-images.githubusercontent.com/69623479/101169789-c1f69600-363d-11eb-9fcf-1bb64aa61d97.PNG)
+
+Ist dies geschafft können die Charactere ausgewählt werden und somit die Variable die später, im tatsächlichen Spiel als Flag genutzt wird, definiert werden. 
+2 Spieler mit jeweils 2 Auwahlmöglichkeiten:
+
+![Unbenannt2](https://user-images.githubusercontent.com/69623479/101169944-fb2f0600-363d-11eb-843a-59ae513cf092.PNG)
+
+Danach musste der Übergang von Charakterauswahl zu Stageauswahl kommen:
+
+![Unbenannt3](https://user-images.githubusercontent.com/69623479/101169984-0da93f80-363e-11eb-9789-a1202bdd0c7e.PNG)
+
+und demenstsprechend dann die Stageauswahl, welche wie auch bei den Characteren die Variable die nach dem Startscreen als Flag dient defniniert:
+
+![Unbenannt4](https://user-images.githubusercontent.com/69623479/101170281-85776a00-363e-11eb-8903-fe097d83bb3a.PNG)
+
+hierbei haben wir über das Definieren der Variable für die Stage hinaus um der Ästhetik willen eine kleine Animation eingebaut auf die wir bei der Characterauswahl verzichtet haben, da eine Animation für alle möglichen Auswahlmöglichkeiten durch beide Spieler flüssig, schnell und bugfrei zu verwirklichen extrem unkompakt gewesen wäre.
+
+Zuguterletzt musste ein Signal kommen mit dem Programm klar werden konnte das der Startscreen abgeschlossen ist. Hierfür haben wir einen Broadcast genutzt, welcher nur dann aktiviert werden kann wenn alle Variablen definiert sind, also die Charactere, sowie Stages ausgewählt sind:
+
+![Unbenannt5](https://user-images.githubusercontent.com/69623479/101170649-0cc4dd80-363f-11eb-93a5-2f460ab61c04.PNG)
+
+#### <a name="2.2.2"></a>Bewegung und die Stage:
 
 
-## <a name="2.2.2"></a>Bewegung:
 
-
-## <a name="2.2.3"></a>Kampfystem:
-
+#### <a name="2.2.3"></a>Kampfsystem:
 
 ### <a name="3"></a> Besondere Herausforderungen:
 
